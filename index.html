@@ -1,0 +1,60 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    <title>Frontpage</title>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <style>
+    body {top: 0; left: 0; width: 99%; height: 97%;
+        position: absolute; display: table}
+      p {display: table-cell; vertical-align: middle; text-align: center}
+    #timezone * {text-decoration: none;}
+    
+    }
+    </style>
+    
+    <script type="text/javascript">
+        // declare time zone formatting
+        let options = {
+            timeZone: 'US/Mountain',
+            hour: 'numeric',
+            minute: 'numeric',
+            second: 'numeric',
+            hourCycle: 'h23' // This sets 24-hour format
+        },
+        formatter = new Intl.DateTimeFormat([], options);
+    
+        // set time
+        setInterval(
+            () => {
+                document.querySelector("#time").innerText = formatter.format(new Date());
+            }
+        , 1000)
+    </script>
+    </head>
+    
+    
+    
+    
+    
+    <body><p>
+    <font size="10"><i><b>Noskaja</b></i></font> <br>
+    <br>
+    <img src="photo.jpg" style="width:560px;"><br>
+    <br>
+    <span id="timezone">
+    <i>
+    <a href="https://24timezones.com/world_directory/current_salt_lake_city_time.php"></a> - <span id="time">7:57:48 PM</span> <a href="https://24timezones.com/time-zone/mt"></a>
+    </i>
+    </span>
+    <br><br>
+    
+    <a href="about.html">about</a> ~
+    <a href="faq.html">faq</a> ~
+    <a href="langhomepage.html ">language studies</a> ~
+    <a href="genstudy.html">general studies</a> ~
+    <a href="bookhomepage.html">book reviews</a>
+    
+    <br>
+    <br>
+    
+    
+    </p></body></html>
